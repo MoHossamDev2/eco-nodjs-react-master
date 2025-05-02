@@ -1,0 +1,100 @@
+.navBar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* min-height: 80px; */
+    justify-content: space-between;
+    padding: 5px;
+    position: fixed;
+    z-index: 999;
+}
+
+.infinity {
+    color: white;
+    font-weight: bold;
+    /* text-align: center; */
+    /* background-color: brown; */
+    /* position: absolute; */
+    /* width: 100vw; */
+    font-size: 30px;
+    font-style: italic;
+    cursor: pointer;
+    /* margin-right: 100px; */
+}
+
+.addProduct{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: white;
+    position: relative;
+    left: 15px;
+   
+}
+
+.addProduct:hover{
+    background-color: #0056b3;
+}
+
+.anonymous {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+    left: 15px;
+    /* margin-right: 10px; */
+}
+
+.shoppingCart {
+    width: 40px;
+    height: 40px;
+    /* border-radius: 100%; */
+    /* margin-right: 10px; */
+    position: relative;
+    left: 15px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.wrapper {
+    margin-right: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.test {
+    position: absolute;
+    right: 77.5px;
+    color: white;
+    top: 3px;
+    background-color: red;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.test2 {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.admin-panel {
+    padding-right: 10px;
+}
+
+.admin-panel a {
+    color: wheat;
+}

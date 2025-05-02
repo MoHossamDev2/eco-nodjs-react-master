@@ -1,0 +1,197 @@
+/* General Container Styles */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.container1 {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 500px;
+
+}
+
+.stars{
+    display: flex;
+    gap: 8px;
+    padding: 10px 0 10px 0;
+}
+
+/* Product Image Card */
+.card1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1 img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  /* object-fit: cover; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Details Card */
+.card2 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card2 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card2 h3 {
+  font-size: 20px;
+  color: #007bff; /* Blue for the price */
+  margin-bottom: 10px;
+}
+
+.card2 h4 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card2 p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0 10px 0;
+  /* margin-bottom: 20px; */
+}
+
+.quantity-controls i {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.quantity-controls i:hover {
+  color: #007bff; /* Blue hover effect */
+}
+
+.quantity-controls strong {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Add to Cart Button */
+.card2 button {
+  background-color: #007bff; /* Blue background */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+  /* padding: 10px 0 10px 0; */
+}
+
+.card2 button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.card2 button i {
+  font-size: 18px;
+}
+
+/* Loader Styles */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff; /* Blue loader */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Success and Error Messages */
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 800px;
+  }
+
+
+
+  .card1 img {
+    max-width: 100%;
+    height: 300px;
+  }
+
+  .card2 {
+    text-align: center;
+  }
+
+  .card2 button {
+    justify-content: center;
+  }
+
+  .card2 .quantity-controls{
+    justify-content: center;
+    /* padding: 5px; */
+  }
+
+  .stars{
+    justify-content: center;
+    /* padding-bottom: 15px; */
+  }
+
+}

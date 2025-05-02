@@ -1,0 +1,223 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    margin-top: 35px;
+}
+
+form {
+    width: 100%;
+}
+
+.login-box {
+    position: relative;
+}
+
+.login-container h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    color: #fff;
+}
+
+.login-container label {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 15px;
+    padding: 10px 0;
+    color: #03c9f4;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-container input {
+    padding: 10px 0;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.login-container button {
+    background-color: transparent;
+    color: #03c9f4;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 20px;
+    overflow: hidden;
+    padding: 25px;
+    position: relative;
+}
+
+.login-container button:hover {
+    background: #03c9f4;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.login-container p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.login-container a {
+    color: #03c9f4;
+}
+
+span {
+    position: absolute;
+    display: block;
+}
+
+button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03c9f4, #03c9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03c9f4, #03c9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03c9f4, #03c9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03c9f4, #03c9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .login-container h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .login-container input {
+        padding: 8px 0;
+        margin-bottom: 20px;
+    }
+
+    .login-container button {
+        font-size: 18px;
+    }
+
+    .login-container p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .login-container h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .login-container input {
+        padding: 6px 0;
+        margin-bottom: 15px;
+    }
+
+    .login-container button {
+        font-size: 16px;
+    }
+
+    .login-container p {
+        font-size: 16px;
+    }
+}
